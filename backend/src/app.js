@@ -6,10 +6,7 @@ import orderRoutes from "./routes/order.routes.js";
 const app = express();
 
 app.use(cors({
-    origin: [
-        "http://localhost:5173",
-        "https://serene-scone-be7e3f.netlify.app/"
-    ]
+    origin: "*"
 }));
 app.use(express.json());
 
