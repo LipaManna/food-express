@@ -10,7 +10,7 @@ export const simulateOrderStatus = (orderId) => {
             return clearInterval(interval);
         }
         order.status = statuses[index];
-        io.emit("orderStatusUpdated", order);
+        // io.emit("orderStatusUpdated", order);
         index++;
         if (index >= statuses.length) {
             clearInterval(interval);
