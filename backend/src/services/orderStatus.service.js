@@ -1,5 +1,5 @@
 import { orders } from "../data/orders.data.js";
-import { io } from "../../server.js";
+// import { io } from "../../server.js";
 
 export const simulateOrderStatus = (orderId) => {
     const statuses = ["Pending", "Preparing", "Out for delivery", "Delivered"];
